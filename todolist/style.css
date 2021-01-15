@@ -1,0 +1,104 @@
+body {
+  background-color: #97999b;
+  font-family: "Source Code Pro", monospace;
+}
+#app {
+  margin-top: 200px;
+}
+
+.title {
+  font-size: 3.5em;
+  margin-bottom: 15px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+h1,
+input,
+label,
+::placeholder,
+button {
+  font-family: "Source Code Pro", monospace;
+}
+
+label {
+  font-weight: 600;
+}
+p {
+  font-weight: 300;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+}
+form {
+  background-color: #ffd500;
+  padding: 1em;
+}
+
+form input {
+  padding: 0.5em;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+}
+.form__button {
+  margin: 0 auto;
+}
+
+button {
+  margin: 0 auto;
+  background-color: #023e8a;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  border-radius: 50%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+ul {
+  background-color: #ffd500;
+  padding: 1em;
+  list-style: none;
+  margin-top: 5px;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cbcccd;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul li button {
+  padding: 0.2em;
+  background-color: #023e8a;
+  border: none;
+  color: white;
+  padding: 5px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.remove__btn {
+  background-color: red;
+}

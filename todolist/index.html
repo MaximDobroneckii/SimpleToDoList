@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Do List</title>
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div id="app">
+		<h1 class="title">{{title}}</h1>
+		<form @submit.prevent="addTask">
+			<div class="form__input">
+			<input placeholder="Новая задача..." type="text" v-model="new_task.title">
+			<textarea placeholder="Описание" type="text" v-model="new_task.desc"></textarea>
+		</div>
+		<div class="form__button">
+			<button type="submit">ADD</button>
+		</div>
+		</form>
+		<ul>
+			<li v-for="task in tasks">
+				<div>
+				<label :class="{done: task.done}" :for="new_task.title" >{{task.title}}</label>
+				  <p>{{task.desc}}</p>
+				</div>
+				<div>
+				  <button  @click="removeTask(task)" type="button">X</button>
+				</div>
+				
+				
+			</li>
+			
+			<button class="remove__btn" @click="removeAllTasks" type="submit">clear all</button>
+		</ul>
+		
+
+	</div>
+
+	<script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+</body>
+</html>
